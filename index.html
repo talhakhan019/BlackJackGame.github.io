@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="gameContainer">
+            <span class="gameTitle">Black Jack Game</span>
+            <h3><span id="blackjack-result">Let's Play</span></h3>
+            <div class="gameSpace">
+                <div id="your-box">
+                    <h2>You: <span id="your-blackjack-result">0</span> </h2>
+                    <div class="yourcardImages"></div>
+                </div>
+                <div id="dealer-box">
+                    <h2>Dealer: <span id="dealer-blackjack-result">0</span> </h2>
+                    <div class="dealercardImages"></div>
+                </div>
+            </div>
+            <div class="gameButtons">
+                <button id="blackjack-hit-button" class="btn btn-lg btn-primary">Hit</button>
+                <button id="blackjack-stand-button" class="btn btn-lg btn-warning">Stand</button>
+                <button id="blackjack-deal-button" class="btn btn-lg btn-danger">Deal</button>
+            </div>
+            <div class="gameTable">
+                <table>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </tr>
+                    <tr>
+                        <td><span id="wins">0</span></td>
+                        <td><span id="losses">0</span></td>
+                        <td><span id="draws">0</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
